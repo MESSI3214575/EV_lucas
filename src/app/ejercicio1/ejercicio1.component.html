@@ -1,0 +1,20 @@
+<div style="margin: 20px;">
+    <h3>Calcular Salario Semanal</h3>
+    <div>
+      <label for="horas">Horas trabajadas:</label>
+      <input
+        id="horas"
+        type="number"
+        (input)="actualizarHoras($event)"
+        placeholder="Ingrese las horas trabajadas"
+      />
+    </div>
+    <button (click)="calcularSalario()">Calcular</button>
+    <div>
+      <p>
+        El salario semanal es:
+        <strong>S/. {{ salario }}</strong>
+      </p>
+    </div>
+  </div>
+  

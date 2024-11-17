@@ -1,0 +1,20 @@
+<div style="margin: 20px;">
+    <h3>Compra de moto</h3>
+    <p>Valor de la moto: $6000</p>
+  
+    <div>
+      <label for="dia">Día de compra:</label>
+      <input 
+        id="dia" 
+        type="text" 
+        (input)="actualizarDia($event)" 
+        placeholder="Ingrese el día (martes, sábado, feriado)" />
+    </div>
+  
+    <button (click)="calcularPrecio()">Calcular precio con descuento</button>
+  
+    <div>
+      <p>Precio con descuento: ${{ precioConDescuento.toFixed(2) }}</p>
+    </div>
+  </div>
+  

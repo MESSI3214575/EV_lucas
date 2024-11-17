@@ -1,0 +1,20 @@
+<div style="margin: 20px;">
+    <h3>Verificar si un número es perfecto</h3>
+    
+    <div>
+      <label for="numero">Número:</label>
+      <!-- Asegúrate de que el input esté correctamente cerrado -->
+      <input 
+        id="numero" 
+        type="number" 
+        (input)="actualizarNumero($event)"  
+        placeholder="Ingrese un número natural" />
+    </div>
+  
+    <button (click)="verificarNumeroPerfecto()">Verificar</button>
+  
+    <div>
+      <p>Resultado: <strong>{{ resultado }}</strong></p>
+    </div>
+  </div>
+  

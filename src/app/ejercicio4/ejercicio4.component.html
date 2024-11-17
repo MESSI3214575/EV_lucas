@@ -1,0 +1,21 @@
+<div style="margin: 20px;">
+    <h3>Sumar los dígitos de un número de 4 dígitos</h3>
+  
+    <div>
+      <label for="numero">Número de 4 dígitos:</label>
+      <input 
+        id="numero" 
+        type="number" 
+        (input)="actualizarNumero($event)"  
+        placeholder="Ingrese un número de 4 dígitos" />
+    </div>
+  
+    <button (click)="sumarDigitos()">Sumar dígitos</button>
+  
+    <div>
+      <!-- Mostrar el mensaje o la suma directamente en el HTML -->
+      <p>{{ mensaje }}</p> <!-- Mostrar el mensaje de error o vacío -->
+      <p>{{ suma ? 'Resultado: ' + suma : '' }}</p> <!-- Mostrar la suma si existe -->
+    </div>
+  </div>
+  
